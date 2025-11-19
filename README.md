@@ -10,7 +10,9 @@ AIが冷蔵庫の余り物から美味しいレシピを提案してくれるWeb
 
 ## 🎬 デモ
 
-![App Demo](./docs/app_demo.webp)
+<video src="https://github.com/yo-works91/app-ai-recipe-helper/raw/main/docs/app_demo.webp" controls autoplay loop muted width="100%">
+  お使いのブラウザは動画タグをサポートしていません。
+</video>
 
 ## 🛠️ 技術スタック
 
