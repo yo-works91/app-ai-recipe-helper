@@ -6,16 +6,6 @@ AIが冷蔵庫の余り物から美味しいレシピを提案してくれるWeb
 
 - **シンプルな操作**: 食材を入力するだけで、AIが3つのレシピ候補を提案
 - **詳細なレシピ**: 材料、調味料、作り方を分かりやすく表示
-- **モダンなデザイン**: Muted Neubrutalism（くすみニューブルータリズム）を採用した、トレンド感のあるUI
-
-## 🎬 デモ
-
-<video src="https://github.com/yo-works91/app-ai-recipe-helper/raw/main/docs/app_demo.webp" controls autoplay loop muted width="100%">
-  お使いのブラウザは動画タグをサポートしていません。
-</video>
-
-## 🛠️ 技術スタック
-
 - **フロントエンド**: Vite + React
 - **スタイリング**: Tailwind CSS v4
 - **状態管理**: Jotai
