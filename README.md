@@ -5,6 +5,10 @@ AIが冷蔵庫の余り物から美味しいレシピを提案してくれるWeb
 > [!NOTE]
 > このプロジェクトは、Google [Antigravity](https://deepmind.google/technologies/gemini/antigravity/)のplaygroundとして作成しました。
 
+## 🎬 デモ
+
+![アプリケーションデモ](./docs/app_demo.gif)
+
 ## ✨ 特徴
 
 - **シンプルな操作**: 食材を入力するだけで、AIが3つのレシピ候補を提案
