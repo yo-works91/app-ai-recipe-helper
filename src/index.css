@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+    --font-sans: "Outfit", "Zen Maru Gothic", sans-serif;
+
+    /* くすみカラーパレット */
+    --color-bg-beige: #f2f0e9;
+    --color-accent-sage: #9caf88;
+    --color-accent-terracotta: #d68c76;
+    --color-accent-slate: #8da3b5;
+    --color-accent-mustard: #e6c76c;
+    --color-text-main: #2d2d2d;
+
+    /* ニューブルータリズム用のシャドウ */
+    --shadow-neu-sm: 2px 2px 0px 0px rgba(0, 0, 0, 1);
+    --shadow-neu-md: 3px 3px 0px 0px rgba(0, 0, 0, 1);
+    --shadow-neu-lg: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+    --shadow-neu-xl: 5px 5px 0px 0px rgba(0, 0, 0, 1);
+}
+
+@layer base {
+    body {
+        font-family: var(--font-sans);
+        color: var(--color-text-main);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background-color: #e0ded5;
+        background-image:
+            linear-gradient(45deg, #d4d2c9 25%, transparent 25%),
+            linear-gradient(-45deg, #d4d2c9 25%, transparent 25%),
+            linear-gradient(45deg, transparent 75%, #d4d2c9 75%),
+            linear-gradient(-45deg, transparent 75%, #d4d2c9 75%);
+        background-size: 20px 20px;
+        background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+        min-height: 100vh;
+    }
+}
+
+@layer utilities {
+
+    /* Neubrutalism Utilities */
+    .neu-panel {
+        background-color: var(--color-bg-beige);
+        border: 2px solid black;
+        box-shadow: var(--shadow-neu-lg);
+    }
+
+    .neu-button {
+        border: 2px solid black;
+        box-shadow: var(--shadow-neu-md);
+        transition: all 150ms;
+    }
+
+    .neu-button:active {
+        box-shadow: none;
+        transform: translate(3px, 3px);
+    }
+
+    .neu-input {
+        border: 2px solid black;
+        box-shadow: var(--shadow-neu-sm);
+        transition: all 200ms;
+        outline: none;
+    }
+
+    .neu-input:focus {
+        box-shadow: var(--shadow-neu-lg);
+    }
+
+    .neu-card {
+        background-color: white;
+        border: 2px solid black;
+        box-shadow: var(--shadow-neu-md);
+        transition: all 200ms;
+    }
+
+    .neu-card:hover {
+        box-shadow: var(--shadow-neu-xl);
+        transform: translateY(-2px);
+    }
+}
